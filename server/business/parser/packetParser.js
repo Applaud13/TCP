@@ -23,7 +23,6 @@ export const packetParser = (bufferedPacket) => {
   }
 
   // payload를 proto를 사용해 디코딩
-  console.log("packet: ", packet);
   const protoType = getProtoTypeByHandlerId(handlerId);
   const [namespace, typeName] = protoType.split(".");
   const PayloadType = protoMessages[namespace][typeName];

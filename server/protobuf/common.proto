@@ -6,8 +6,7 @@ message Packet {
   uint32 handlerId = 1;
   string userId = 2;
   string clientVersion = 3;
-  uint32 sequence = 4;
-  bytes payload = 5;
+  bytes payload = 4;
 }
 
 message Ping  {
